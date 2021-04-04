@@ -97,6 +97,6 @@ if __name__ == '__main__':
             # print(f'[Log] : map_pool {map_pool.shape}')
             # print(f'[Log] : avg_pool {avg_pool.shape}')
             np.save(os.path.join(save_dir, save_name), avg_pool.squeeze().permute(-1, 0).data.cpu().numpy())
-            np.save(os.path.join(map_dir, save_name), map_pool.squeeze(0).permute(1,2,3,0).data.cpu().numpy())
+            # np.save(os.path.join(map_dir, save_name), map_pool.squeeze(0).permute(1,2,3,0).data.cpu().numpy())
 
 
